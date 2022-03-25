@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+      telegraf:
+            container_name: telegraf
+            image: telegraf:1.22
+            volumes:
+                  - "./telegraf.conf:/etc/telegraf/telegraf.conf"
+                  - "./out:/opt/telegraf"
+                  - "./data:/data"
