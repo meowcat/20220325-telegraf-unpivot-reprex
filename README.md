@@ -3,7 +3,7 @@
 Steps to reproduce:
 
 * Clone repo
-* Unzip "in.zip" to `data/in/", it should then contain 334 CSV files
+* Unzip "in_mini.zip" to `data/in/", it should then contain 334 CSV files
 * In the repo folder, run `docker-compose -f docker-compose-nopivot.yaml up`
   * This starts Telegraf with `telegraf-nopivot.conf` as config, where `directory_monitoring` input writes directly to `file` output
 * This processes all of `data/in` correctly and moves the files to `data/out`
